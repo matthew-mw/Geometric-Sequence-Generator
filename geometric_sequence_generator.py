@@ -7,10 +7,10 @@ def generator(n0: int, g_of_n0: float, n1: int, g_of_n1: float):
     r = f"({mapped[n1]}/{mapped[n0]})^(1/{n[1] - n[0]})"
     print(f"r = {r}")
 
-    gn = f"{n[0]}*(r^(n-{n[0]}))"
+    gn = f"{mapped[n[0]]}*(r^(n-{n[0]}))"
     print(f"g(n) = {gn}")
 
-    gn = f"{n[0]}*(({r})^(n-{n[0]}))"
+    gn = f"{mapped[n[0]]}*(({r})^(n-{n[0]}))"
     print(f"g(n) = {gn}")
 
     return gn
